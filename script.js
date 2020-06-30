@@ -1,6 +1,6 @@
 
         // Set all variables to their base values
-        function resetGame () {
+        function nameThisFunction () {
 
             playerChoice = "";
             computerChoice = "";
