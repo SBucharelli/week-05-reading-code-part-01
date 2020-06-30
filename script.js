@@ -4,8 +4,9 @@
 const finalChallenge = ['What', 'game', 'do', 'these', 'functions', 'belong', 'to?']
 
 
-// Turn that array into a single string. Find the Array method and usage to make a sentence
-// Replace `whatGoesHere` with a method call with the appropriate param value(s)
-const finalQuestion = finalChallenge.whatGoesHere
+// Turn that array into a single string of "What game do these functions belong to?". 
+// Find the Array method and usage to make a sentence
+const finalQuestion = finalChallenge.join(' ')
 
+// Expect "What game do these functions belong to?"
 console.log({ finalQuestion })
