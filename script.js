@@ -1,10 +1,10 @@
 
-        // @TODO give this function a name and provide your description of what the function does in your commit message
-        function nameThisFunction(playerChoice, computerChoice, winnerText) {
+        // Sets all the values on the board
+        function showChoicesAndWinner(playerChoice, computerChoice, winnerText) {
 
             $('.player-choice').text(playerChoice);
             $('.computer-choice').text(computerChoice);
-            $('.winner').text(winnerText);
+            $('.winner').text(winnerText); // Who won the round
 
             // If the game has been reset set the score immediately
             if(round !== 1) {
