@@ -5,7 +5,7 @@
         //          
         //          Read the code of the function to come up with a name.
         //              
-        //       2) Provide your short description of what the function does in your commit message
+        //       2) Commit your changes to `challenge01`. Provide your short description of what the function does in your commit message
         //
         //        Let's make great commit messages:
         //        -- remember to read https://chris.beams.io/posts/git-commit/
