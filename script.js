@@ -17,21 +17,16 @@
         //        -- Do not end the message with a period
         //        -- Use the imperative mood in the subject line
         //        -- Your message completes this "If applied, this commit will" "Your commit message here"
-        function decideWinner(playerChoice, computerChoice) {
-            // Decide who wins based on the player & computer choice
+        function nameThisFunction(playerChoice, computerChoice) {
+            let resultClass;
 
-            var resultClass;
-
-            // Who wins, What text is shown & What class is applied to the result screen
             if (playerChoice === computerChoice) {
 
-                // If there is a tie
                 winner = tieText;
                 resultClass = "tie";
 
             } else if (playerChoice === "a") {
 
-                // If the player chooses "a"
                 switch (computerChoice) {
                     case "b":
                         winner = playerWinsText;
@@ -47,7 +42,6 @@
 
             }  else if (playerChoice === "c") {
 
-                // If the player chooses "c"
                 switch (computerChoice) {
                     case "a":
                         winner = playerWinsText;
@@ -64,7 +58,6 @@
 
             } else {
 
-                // If the player chooses "b"
                 switch (computerChoice) {
                     case "a":
                         winner = computerWinsText;
@@ -80,7 +73,6 @@
 
             }
 
-            // Set the class of the result screen
             $('.result').attr('class', 'result ' + resultClass);
 
             return winner;
