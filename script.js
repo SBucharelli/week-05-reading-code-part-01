@@ -17,9 +17,72 @@
         //        -- Do not end the message with a period
         //        -- Use the imperative mood in the subject line
         //        -- Your message completes this "If applied, this commit will" "Your commit message here"
-        function nameThisFunction() {
-            // Decides on whether the computer is playing a, b or c
-            let choices = ['a', 'b', 'c'];
-            let result = Math.floor(Math.random() * choices.length);
-            return choices[result];
+        function decideWinner(playerChoice, computerChoice) {
+            // Decide who wins based on the player & computer choice
+
+            var resultClass;
+
+            // Who wins, What text is shown & What class is applied to the result screen
+            if (playerChoice === computerChoice) {
+
+                // If there is a tie
+                winner = tieText;
+                resultClass = "tie";
+
+            } else if (playerChoice === "a") {
+
+                // If the player chooses "a"
+                switch (computerChoice) {
+                    case "b":
+                        winner = playerWinsText;
+                        playerScore++;
+                        resultClass = "win";
+                    break;
+                    case "c":
+                        winner = computerWinsText;
+                        computerScore++;
+                        resultClass = "lose";
+                    break;
+                }
+
+            }  else if (playerChoice === "c") {
+
+                // If the player chooses "c"
+                switch (computerChoice) {
+                    case "a":
+                        winner = playerWinsText;
+                        playerScore++;
+                        resultClass = "win";
+                    break;
+                    case "b":
+                        winner = computerWinsText;
+                        computerScore++;
+                        resultClass = "lose";
+                    break;
+
+                }
+
+            } else {
+
+                // If the player chooses "b"
+                switch (computerChoice) {
+                    case "a":
+                        winner = computerWinsText;
+                        computerScore++;
+                        resultClass = "lose";
+                    break;
+                    case "c":
+                        winner = playerWinsText;
+                        playerScore++;
+                        resultClass = "win";
+                    break;
+                }
+
+            }
+
+            // Set the class of the result screen
+            $('.result').attr('class', 'result ' + resultClass);
+
+            return winner;
+
         }
