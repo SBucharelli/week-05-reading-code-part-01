@@ -17,9 +17,9 @@
         //        -- Do not end the message with a period
         //        -- Use the imperative mood in the subject line
         //        -- Your message completes this "If applied, this commit will" "Your commit message here"
-        function computerDecision() {
+        function nameThisFunction() {
             // Decides on whether the computer is playing a, b or c
             let choices = ['a', 'b', 'c'];
-            let randomChoice = Math.floor(Math.random() * choices.length);
-            return choices[randomChoice];
+            let result = Math.floor(Math.random() * choices.length);
+            return choices[result];
         }
