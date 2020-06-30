@@ -7,7 +7,7 @@
         //
         //       2) Rename any variables to match any understanding you make about the code
         //             
-        //       3) provide your short description of what the function does in your commit message
+        //       3) Commit your changes to `challenge04`. Provide your short description of what the function does in your commit message
         //
         //        Let's make great commit messages:
         //        -- remember to read https://chris.beams.io/posts/git-commit/
